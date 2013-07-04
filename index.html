@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Diets Javascript Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>
+
+<body>
+    <h1>Special Diets Demo</h1>
+
+    <select id="diets">
+        <option value="">Please Select a Special Diet</option>
+        <optgroup label="Special Diets">
+            <option value="Gluten_Free">Gluten Free</option>
+            <option value="Gluten_and_Casein_Free">Gluten and Casein Free</option>
+            <option value="Non_GMO_Project_Verified_Products">Non-GMO Project Verified Products</option>
+            <option value="Premium_Body_Care_Products">Premium Bodycare Products</option>
+        </optgroup>    
+    </select>    
+
+    <select id="stores">
+        <option value="">Please Select a Store</option>
+        <optgroup label="Stores">
+            <option value="LMR">Lamar</option>
+            <option value="GWY">Gateway</option>
+            <option value="YRK">Toronto</option>
+        </optgroup>    
+    </select>    
+
+    <div id="specialdiets"></div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+      jQuery(window).load(function($) {
+        jQuery('#specialdiets').WFMspecialDiets({
+        });
+      });
+    </script>
+</body>
+
+</html>

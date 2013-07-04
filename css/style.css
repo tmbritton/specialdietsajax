@@ -1,0 +1,13 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h3 {
+  border-bottom: 1px solid #222;
+}
+
+.spinner {
+  display:block;
+  margin: 30px auto 0 auto;
+}
